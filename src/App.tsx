@@ -4,6 +4,7 @@ import UserContextProvider from "./Context/UserContext";
 import GrandPa from "./components/GrandPa/GrandPa";
 import { Example } from "./components/Example/Example";
 import Header from "./components/Header/Header";
+import User from "./components/User/User";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         </ContextProvider>
         <UserContextProvider>
             <Header/>
+            <User/>
         </UserContextProvider>
     </>
   );

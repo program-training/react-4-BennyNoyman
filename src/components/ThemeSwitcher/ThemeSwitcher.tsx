@@ -7,7 +7,7 @@ export default function ThemeSwitcher() {
     const [mode, setMode] = useState<boolean>(true)
     const context = useContext(ThemeContext);
     if (!context) return;
-    const {theme, setTheme} = context
+    const {theme, setTheme} = context;
     return(
         <div id={theme}>
             <Text/>

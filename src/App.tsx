@@ -1,9 +1,9 @@
 import "./App.css";
 import ContextProvider from "./Context/ContextProvider";
-import ThemeContextProvider from "./Context/ThemeContent";
+import UserContextProvider from "./Context/UserContext";
 import GrandPa from "./components/GrandPa/GrandPa";
-import ThemeSwitcher from "./components/ThemeSwitcher/ThemeSwitcher";
 import { Example } from "./components/Example/Example";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
         <ContextProvider>
             <GrandPa/>
         </ContextProvider>
-        <ThemeContextProvider>
-            <ThemeSwitcher/>
-        </ThemeContextProvider>
+        <UserContextProvider>
+            <Header/>
+        </UserContextProvider>
     </>
   );
 }
